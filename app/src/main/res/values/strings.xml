@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">Octo-Stalker</string>
+	<string name="screen_title">Repo-Stalker</string>
+	<string name="users_title">%s follows</string>
+	<string name="action_search">Search</string>
+
+	<string name="no_internet_error_title">No Internet Connection</string>
+	<string name="no_internet_error_message">Please check your internet connection and try again.</string>
+	<string name="network_call_error">An error occurred. Please try again later.</string>
+	<string name="no_results_found">No results found.</string>
+
+</resources>
