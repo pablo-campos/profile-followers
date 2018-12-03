@@ -27,8 +27,8 @@ public class UserAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> i
 
 
 	// Provide a suitable constructor (depends on the kind of dataset)
-	public UserAdapter (final UserClickListener userClickListener, final List<User> users) {
-		this.users = users;
+	public UserAdapter (final UserClickListener userClickListener) {
+		this.users = new ArrayList<>();
 		this.usersFiltered = users;
 		this.userClickListener = userClickListener;
 	}
