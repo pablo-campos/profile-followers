@@ -16,13 +16,6 @@ You should be able to clone the project and run it on Android Studio.
 * Add unit testing.
 
 ## Screenshots:
-* Main view:
 <img src="main_screen.png" width="240" height="428"/>
-
-
-* User Followers:
 <img src="user_followers.png" width="240" height="428"/>
-
-
-* Filter Users Functionality:
 <img src="filter_functionality.png" width="240" height="428"/>
