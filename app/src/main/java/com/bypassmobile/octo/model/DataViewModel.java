@@ -57,6 +57,7 @@ public class DataViewModel extends ViewModel {
 
 	private void loadCompanyUsers (){
 
+		// Let UI know we need to display progress bar
 		dataWrapper.setStatus(DataWrapper.Status.LOADING);
 		liveData.postValue(dataWrapper);
 
@@ -84,6 +85,10 @@ public class DataViewModel extends ViewModel {
 
 
 	private void loadUserDetails (final User user){
+
+		// Let UI know we need to display progress bar
+		dataWrapper.setStatus(DataWrapper.Status.LOADING);
+		liveData.postValue(dataWrapper);
 
 		endpoint.getUserFollowing(user.getName(), new Callback<List<User>>() {
 			@Override
