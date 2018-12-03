@@ -17,6 +17,6 @@ You should be able to clone the project and run it on Android Studio.
 
 ## Screenshots:
 
-![Main Screen](main_screen.png "App's Main Screen"){:height="50%" width="50%"}
-![User Followers](user_followers.png "User Followers"){:height="50%" width="50%"}
-![Filter Functionality](filter_functionality.png "Filter Functionality"){:height="50%" width="50%"}
+![Main Screen](main_screen.png "App's Main Screen"){:height="20%" width="20%"}
+![User Followers](user_followers.png "User Followers"){:height="30%" width="30%"}
+![Filter Functionality](filter_functionality.png "Filter Functionality"){:height="10%" width="10%"}
