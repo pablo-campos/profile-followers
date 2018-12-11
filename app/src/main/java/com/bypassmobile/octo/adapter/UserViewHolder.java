@@ -6,7 +6,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.bypassmobile.octo.R;
-import com.bypassmobile.octo.Utils.CircleTransform;
+import com.bypassmobile.octo.utils.CircleTransform;
 import com.bypassmobile.octo.image.ImageLoader;
 import com.bypassmobile.octo.model.User;
 

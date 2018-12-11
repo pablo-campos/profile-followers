@@ -1,4 +1,4 @@
-package com.bypassmobile.octo.Utils;
+package com.bypassmobile.octo.utils;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapShader;

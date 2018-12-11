@@ -15,7 +15,7 @@
 		android:theme="@style/AppTheme">
 
 		<activity
-			android:name="com.bypassmobile.octo.SearchActivity"
+			android:name="com.bypassmobile.octo.activity.SearchActivity"
 			android:label="@string/screen_title">
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN"/>

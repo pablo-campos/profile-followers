@@ -64,7 +64,7 @@ public class UserAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> i
 	public void updateData(final List<User> newData){
 
 		// Sort new data by name alphabetically
-		Collections.sort(newData, new SortByName());
+		Collections.sort(newData, new UserSortByName());
 
 		// Update internal data
 		users.clear();

@@ -1,8 +1,6 @@
 package com.bypassmobile.octo.model;
 
 
-import com.bypassmobile.octo.SearchActivity;
-import com.bypassmobile.octo.Utils.Utils;
 import com.bypassmobile.octo.rest.GithubEndpoint;
 
 import java.util.ArrayList;

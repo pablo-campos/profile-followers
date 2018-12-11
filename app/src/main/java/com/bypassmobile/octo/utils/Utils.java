@@ -1,4 +1,4 @@
-package com.bypassmobile.octo.Utils;
+package com.bypassmobile.octo.utils;
 
 import android.content.Context;
 import android.net.ConnectivityManager;

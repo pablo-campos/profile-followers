@@ -1,4 +1,4 @@
-package com.bypassmobile.octo;
+package com.bypassmobile.octo.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,7 +9,8 @@ import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.bypassmobile.octo.Utils.Utils;
+import com.bypassmobile.octo.R;
+import com.bypassmobile.octo.utils.Utils;
 import com.bypassmobile.octo.adapter.UserAdapter;
 import com.bypassmobile.octo.adapter.UserClickListener;
 import com.bypassmobile.octo.model.DataWrapper;

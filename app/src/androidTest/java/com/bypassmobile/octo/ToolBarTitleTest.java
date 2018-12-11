@@ -3,6 +3,8 @@ package com.bypassmobile.octo;
 
 import android.widget.TextView;
 
+import com.bypassmobile.octo.activity.SearchActivity;
+
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;

@@ -7,8 +7,6 @@ import java.io.Serializable;
 
 public class User implements Serializable {
 
-	private boolean isBypass;
-
 	@SerializedName("login")
 	private final String name;
 
@@ -32,17 +30,5 @@ public class User implements Serializable {
 
 	public String getProfileURL () {
 		return profileURL;
-	}
-
-
-
-	public boolean isBypass () {
-		return isBypass;
-	}
-
-
-
-	public void setBypass (final boolean bypass) {
-		isBypass = bypass;
 	}
 }

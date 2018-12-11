@@ -4,7 +4,7 @@ import com.bypassmobile.octo.model.User;
 
 import java.util.Comparator;
 
-public class SortByName implements Comparator<User> {
+public class UserSortByName implements Comparator<User> {
 
 	@Override
 	public int compare (final User user1, final User user2) {
