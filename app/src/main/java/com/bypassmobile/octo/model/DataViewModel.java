@@ -1,17 +1,12 @@
 package com.bypassmobile.octo.model;
 
 
+import com.bypassmobile.octo.rest.ApiCallBack;
 import com.bypassmobile.octo.rest.GithubEndpoint;
-
-import java.util.ArrayList;
-import java.util.List;
 
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
-import retrofit.Callback;
 import retrofit.RestAdapter;
-import retrofit.RetrofitError;
-import retrofit.client.Response;
 
 public class DataViewModel extends ViewModel {
 
@@ -58,26 +53,7 @@ public class DataViewModel extends ViewModel {
 		// Let UI know we need to display progress bar
 		dataWrapper.setStatus(DataWrapper.Status.LOADING);
 		liveData.postValue(dataWrapper);
-
-		endpoint.getOrganizationMembers(BYPASS_MOBILE_ID, new Callback<List<User>>() {
-			@Override
-			public void success(List<User> users, Response response) {
-
-				// Stop refresh status and update data
-				dataWrapper.setStatus(DataWrapper.Status.NONE);
-				dataWrapper.setData(users);
-				liveData.postValue(dataWrapper);
-			}
-
-			@Override
-			public void failure(RetrofitError error) {
-
-				// Stop refresh status
-				dataWrapper.setStatus(DataWrapper.Status.ERROR);
-				dataWrapper.setData(new ArrayList<User>());
-				liveData.postValue(dataWrapper);
-			}
-		});
+		endpoint.getOrganizationMembers(BYPASS_MOBILE_ID, new ApiCallBack(dataWrapper, liveData));
 	}
 
 
@@ -87,26 +63,7 @@ public class DataViewModel extends ViewModel {
 		// Let UI know we need to display progress bar
 		dataWrapper.setStatus(DataWrapper.Status.LOADING);
 		liveData.postValue(dataWrapper);
-
-		endpoint.getUserFollowing(user.getName(), new Callback<List<User>>() {
-			@Override
-			public void success(List<User> users, Response response) {
-
-				// Stop refresh status and update data
-				dataWrapper.setStatus(DataWrapper.Status.NONE);
-				dataWrapper.setData(users);
-				liveData.postValue(dataWrapper);
-			}
-
-			@Override
-			public void failure(RetrofitError error) {
-
-				// Stop refresh status
-				dataWrapper.setStatus(DataWrapper.Status.ERROR);
-				dataWrapper.setData(new ArrayList<User>());
-				liveData.postValue(dataWrapper);
-			}
-		});
+		endpoint.getUserFollowing(user.getName(), new ApiCallBack(dataWrapper, liveData));
 	}
 
 }
