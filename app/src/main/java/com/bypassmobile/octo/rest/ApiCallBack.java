@@ -14,8 +14,8 @@ import retrofit.client.Response;
 public class ApiCallBack implements Callback<List<User>> {
 
 
-	private DataWrapper<User> dataWrapper;
-	private MutableLiveData<DataWrapper<User>> liveData;
+	private final DataWrapper<User> dataWrapper;
+	private final MutableLiveData<DataWrapper<User>> liveData;
 
 
 	public ApiCallBack (final DataWrapper<User> dataWrapper, final MutableLiveData<DataWrapper<User>> liveData) {
@@ -40,7 +40,7 @@ public class ApiCallBack implements Callback<List<User>> {
 
 		// Stop refresh status
 		dataWrapper.setStatus(DataWrapper.Status.ERROR);
-		dataWrapper.setData(new ArrayList<User>());
+		dataWrapper.setData(new ArrayList<>());
 		liveData.postValue(dataWrapper);
 	}
 

@@ -3,12 +3,12 @@ apply plugin: 'com.android.application'
 android {
 
 	// buildToolsVersion 28		 NOTE: not important anymore since compileSdkVersion takes care of this now
-	compileSdkVersion 28
+	compileSdkVersion 32
 	defaultConfig {
 		versionCode 1
 		versionName "1"
 		minSdkVersion 19
-		targetSdkVersion 28
+		targetSdkVersion 32
 		testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 	}
 }
@@ -16,23 +16,23 @@ android {
 dependencies {
 
 	// Support libraries
-	implementation 'androidx.recyclerview:recyclerview:1.0.0'
-	implementation 'com.google.android.material:material:1.1.0-alpha01'
-	implementation 'androidx.appcompat:appcompat:1.0.2'
+	implementation 'androidx.recyclerview:recyclerview:1.2.1'
+	implementation 'com.google.android.material:material:1.7.0-alpha02'
+	implementation 'androidx.appcompat:appcompat:1.4.2'
 
 	// ViewModel and LiveData
-	implementation 'androidx.lifecycle:lifecycle-extensions:2.0.0'
+	implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
 
 	// Third party libraries used
-	implementation 'com.google.code.gson:gson:2.8.5'
+	implementation 'com.google.code.gson:gson:2.8.9'
 	implementation 'com.squareup.retrofit:retrofit:1.2.2'
 	implementation 'com.squareup.picasso:picasso:2.71828'
 
 	// AndroidJUnitRunner and JUnit Rules
-	androidTestImplementation 'androidx.test:runner:1.1.0'
-	androidTestImplementation 'androidx.test:rules:1.1.0'
+	androidTestImplementation 'androidx.test:runner:1.4.0'
+	androidTestImplementation 'androidx.test:rules:1.4.0'
 
 	// Espresso - UI test
-	androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
-	androidTestImplementation 'androidx.test.espresso:espresso-contrib:3.1.0'
+	androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+	androidTestImplementation 'androidx.test.espresso:espresso-contrib:3.4.0'
 }

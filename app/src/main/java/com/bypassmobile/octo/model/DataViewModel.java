@@ -12,7 +12,7 @@ public class DataViewModel extends ViewModel {
 
 
 
-	private final String BYPASS_MOBILE_ID = "bypasslane";		// Bypass Mobile ID
+	private final String GOOGLE_ID = "google";		// Bypass Mobile ID
 
 
 
@@ -53,7 +53,7 @@ public class DataViewModel extends ViewModel {
 		// Let UI know we need to display progress bar
 		dataWrapper.setStatus(DataWrapper.Status.LOADING);
 		liveData.postValue(dataWrapper);
-		endpoint.getOrganizationMembers(BYPASS_MOBILE_ID, new ApiCallBack(dataWrapper, liveData));
+		endpoint.getOrganizationMembers(GOOGLE_ID, new ApiCallBack(dataWrapper, liveData));
 	}
 
 
